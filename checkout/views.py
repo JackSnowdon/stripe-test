@@ -5,7 +5,7 @@ from .forms import *
 from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
-from product.models import Product
+from products.models import Product
 import stripe
 
 
