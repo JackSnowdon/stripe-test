@@ -15,6 +15,7 @@ configobj==5.0.6
 constantly==15.1.0
 cryptography==2.1.4
 distro-info===0.18ubuntu0.18.04.1
+dj-database-url==0.5.0
 Django==1.11
 django-forms-bootstrap==3.1.0
 docutils==0.14
@@ -44,6 +45,7 @@ PAM==0.4.2
 parso==0.1.1
 pbr==5.2.1
 Pillow==5.1.0
+psycopg2-binary==2.8.3
 pyasn1==0.4.5
 pyasn1-modules==0.2.1
 pycrypto==2.6.1
@@ -62,7 +64,7 @@ python-debian==0.1.32
 pytz==2019.1
 pyxdg==0.25
 PyYAML==3.13
-requests==2.18.4
+requests==2.22.0
 requests-unixsocket==0.1.5
 roman==2.0.0
 rsa==3.4.2
@@ -72,6 +74,7 @@ service-identity==16.0.0
 six==1.12.0
 ssh-import-id==5.7
 stevedore==1.30.1
+stripe==2.30.1
 systemd-python==234
 Twisted==17.9.0
 ufw==0.36
