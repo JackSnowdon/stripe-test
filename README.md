@@ -12,3 +12,6 @@ To get started, create some files, play with the terminal,
 or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
 
 Happy coding!
+
+
+[![Build Status](https://travis-ci.org/JackSnowdon/stripe-test.svg?branch=master)](https://travis-ci.org/JackSnowdon/stripe-test)
