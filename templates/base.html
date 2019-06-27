@@ -32,11 +32,11 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'profile' %}">Profile</a></li>
-                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                    <li><a href="{% url 'profile' %}"><i class="fas fa-user">Profile</i></a></li>
+                    <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt">Log Out</i></a></li>
                     {% else %}
-                    <li><a href="{% url 'registration' %}">Register</a></li>
-                    <li><a href="{% url 'login' %}">Log In</a></li>
+                    <li><a href="{% url 'registration' %}"><i class="fas fa-user-plus">Register</i></a></li>
+                    <li><a href="{% url 'login' %}"><i class="fas fa-sign-in-alt">Log In</i></a></li>
                     {% endif %}
                     <li>
                         <a href="{% url 'view_cart' %}">

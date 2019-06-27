@@ -12,4 +12,3 @@ class ProductTests(TestCase):
         test_name = Product(name="A product")
         self.assertEqual(str(test_name), "A product")
         
-    
