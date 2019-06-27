@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import env
+# import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,8 +27,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-if env:
-    ALLOWED_HOSTS = [env.C9_HOSTNAME]
+C9_HOSTNAME = "876ff6e6cd874766a99803674affc102.vfs.cloud9.us-east-1.amazonaws.com"
+
+ALLOWED_HOSTS = [C9_HOSTNAME]
+    
 
 # Application definition
 
