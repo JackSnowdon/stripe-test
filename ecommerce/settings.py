@@ -29,7 +29,7 @@ DEBUG = True
 
 C9_HOSTNAME = "876ff6e6cd874766a99803674affc102.vfs.cloud9.us-east-1.amazonaws.com"
 
-ALLOWED_HOSTS = [C9_HOSTNAME, 'https://django-shop-testa.herokuapp.com/']
+ALLOWED_HOSTS = [C9_HOSTNAME, 'django-shop-testa.herokuapp.com']
     
 
 # Application definition
