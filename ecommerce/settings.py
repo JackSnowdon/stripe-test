@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import env
+# import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,7 +29,7 @@ DEBUG = True
 
 C9_HOSTNAME = "876ff6e6cd874766a99803674affc102.vfs.cloud9.us-east-1.amazonaws.com"
 
-ALLOWED_HOSTS = [C9_HOSTNAME]
+ALLOWED_HOSTS = [C9_HOSTNAME, 'https://django-shop-testa.herokuapp.com/']
     
 
 # Application definition
@@ -144,7 +144,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 
 
 STRIPE_PUBLISHABLE = os.getenv("STRIPE_PUBLISHABLE")
@@ -166,4 +166,5 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
